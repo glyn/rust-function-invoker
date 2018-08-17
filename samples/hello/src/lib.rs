@@ -24,5 +24,4 @@ pub extern "C" fn function(input: &String) -> String {
 }
 
 // Ensure function has a suitable type.
-#[allow(dead_code)]
-const FUN: Basic = function;
+const _FUN: Basic = function;
