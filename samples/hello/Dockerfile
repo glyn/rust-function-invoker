@@ -6,12 +6,6 @@ WORKDIR /rust-invoker
 
 COPY . .
 
-RUN apt-get update
-
-RUN apt-get install -qq musl-tools
-
-RUN rustup target add x86_64-unknown-linux-musl
-
 RUN cargo build --target x86_64-unknown-linux-musl --release
 
 ###########
